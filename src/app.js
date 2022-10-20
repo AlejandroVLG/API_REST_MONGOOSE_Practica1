@@ -19,5 +19,8 @@ app.get('/', (req, res) => {
 
 //ruta para la coleccion de datos
 
+app.use('/api/cafe', require('./routes/cafes'))
+app.use('/api/videos', require('./routes/videos'))
+
 
 module.exports = app
