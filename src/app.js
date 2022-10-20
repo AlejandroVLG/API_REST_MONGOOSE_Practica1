@@ -22,5 +22,4 @@ app.get('/', (req, res) => {
 app.use('/api/cafe', require('./routes/cafes'))
 app.use('/api/videos', require('./routes/videos'))
 
-
 module.exports = app

@@ -13,7 +13,7 @@ router.route('/')
     .post(createVideo)
 
 router.route('/:id')
-    .update(updateVideo)
+    .put(updateVideo)
     .delete(deleteVideo)
 
 module.exports = router

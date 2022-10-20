@@ -10,6 +10,8 @@ const { getCafe,
 
 router.route('/')
     .get(getCafe)
+
+router.route('/crearCafe')
     .post(createCafe)
 
 router.route('/:id')
