@@ -3,7 +3,7 @@ const cafeCtrl = {}
 const Cafe = require('../models/Cafe')
 
 cafeCtrl.getCafe = async (req, res) => {
-    const cafes = await Cafe.findById()
+    const cafes = await Cafe.find()
     res.json(cafes)
 }
 
