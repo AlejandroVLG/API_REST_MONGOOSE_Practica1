@@ -1,7 +1,8 @@
 const { Router } = require('express')
 const router = Router()
 
-const { getCafe,
+const {
+    getCafe,
     getOneCafe,
     createCafe,
     updateCafe,

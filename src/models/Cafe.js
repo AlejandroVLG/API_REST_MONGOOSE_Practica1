@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose')
 
 const cafeSchema = new Schema({
     nombre: String,
-    description: String
+    descripcion: String
 })
 
 module.exports = model('Cafe', cafeSchema)
