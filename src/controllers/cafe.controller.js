@@ -13,20 +13,26 @@ cafeCtrl.getOneCafe = async (req, res) => {
 }
 
 cafeCtrl.createCafe = async (req, res) => {
-    const { nombre, descripcion } = req.body
+    const { nombre, sabor, descripcion, precio, peso } = req.body
     const newCafe = new Cafe({
         nombre: nombre,
-        descripcion: descripcion
+        sabor: sabor,
+        descripcion: descripcion,
+        precio: precio,
+        peso: peso
     })
     await newCafe.save()
     res.send('El cafe ha sido guardado')
 }
 
 cafeCtrl.updateCafe = async (req, res) => {
-    const { nombre, descripcion } = req.body
+    const { nombre, sabor, descripcion, precio, peso } = req.body
     await Cafe.findByIdAndUpdate(req.params.id, {
         nombre: nombre,
-        descripcion: descripcion
+        sabor: sabor,
+        descripcion: descripcion,
+        precio: precio,
+        peso: peso
     })
     res.send('El cafe ha sido actualizado')
 }
